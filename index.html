@@ -8,55 +8,24 @@
   <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
 
 <body>
-
- <div class="main-nav">
-        <ul class="nav">
-          <li class="name">Sarah's Notes</li>
-        </ul>
-    </div>
   
   <header>
-      <img src="https://pbs.twimg.com/profile_images/1472910657/image.jpg" class="profile-image">
+      <img src="https://i.imgflip.com/4kebm.jpg" class="profile-image">
       <h2 class="tag name">Hello, I’m Sarah.</h2>
-      <p class="tag location">Things that I love include: my adorable son, cats, art, music, and videogames.</p>
+    <div class="div.first"><p class="tag location">Things that I love include: my adorable son, cats, art, music, and videogames.</p></div>
     </header>
 <h3 class="serif" align="left"><font size=11>These are my notes...!</h3></font>
-  
-<!Accoridian>
-  <button class="accordion">Section 1</button>
-<div class="panel">
-  <p>Lorem ipsum...</p>
+    
+<div class="navbar">
+  <a href="#home"><b>Home</b></a>
+  <a href="#news"><b>News</b></a>
+  <a href="#contact"><b>Contact</b></a>
 </div>
 
-<button class="accordion">Section 2</button>
-<div class="panel">
-  <p>Lorem ipsum...</p>
+<div class="main">
+  <p>Some text some text some text some text..</p>
 </div>
 
-<button class="accordion">Section 3</button>
-<div class="panel">
-  <p>Lorem ipsum...</p>
-</div>
 
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
-
-        /* Toggle between hiding and showing the active panel */
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    });
-} 
-</script>
   
 </body></html>
