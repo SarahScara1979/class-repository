@@ -14,7 +14,7 @@ body {
 h3 {
   font-family: "Impact", Charcoal, sans-serif;
   color: white;  
-  text-shadow: 3px 3px 3px #3399CC;
+  text-shadow: 4px 4px 4px #3399CC;
 } 
 
 /* The navigation bar */
@@ -23,7 +23,7 @@ h3 {
     background-color: #ffffff;
     position: relative; /* Set the navbar to fixed position */
     bottom: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    width: 50%;
 }
 
 /* Links inside the navbar */
@@ -38,7 +38,7 @@ h3 {
 
 /* Change background on mouse-over */
 .navbar a:hover {
-    background: #a8a4a4;
+    background: #3399CC;
     color: black;
 }
 
@@ -85,4 +85,15 @@ header .profile-image:hover {
   background-color: #222;
   color: yellow;
   font-family: "Arial", Helvetica, sans-serif;  
+}
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 575px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  border-color: #3399CC;
 }
