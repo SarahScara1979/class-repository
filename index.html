@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
-
 <body>
   
   <header>
@@ -15,23 +14,22 @@
     <div class="div.first"><p class="tag location">Things that I love include: my adorable son, cats, art, music, and videogames.</p></div>
     </header>
 
-<div class="card"><h3 class="serif" align="left"><font size=11>These are my notes...!</h3></font>
+<h3 class="serif" align="left"><font size=11>These are my notes...!</h3></font>
     
 <div class="navbar">
-  <a href="#home"><b>HTML</b></a>
-  <a href="#news"><b>CSS</b></a>
-  <a href="#contact"><b>JavaScript</b></a>
+  <a href="#html&css"><b>HTML & CSS</b></a>
+  <a href="#javascript"><b>JavaScript</b></a>
 </div>
 
-<div class="tab" "card">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">HTML & CSS</button>
   <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
 </div>
 
 <div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
+ HTML stands for Hypertext Markup Language. HTML is simply a set of tags we use to describe to the browser how our webpages are structured. 
+We do this by surrounding the content of our webpages with these HTML tags.
 </div>
 
 <div id="Paris" class="tabcontent">
@@ -45,28 +43,19 @@
 </div>
 
 <script>
-function openCity(evt, cityName) {
-    // Declare all variables
+  function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
-
-    // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
-
-    // Get all elements with class="tablinks" and remove the class "active"
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-
-    // Show the current tab, and add an "active" class to the link that opened the tab
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 </script>
-
-</div>
   
 </body></html>
